@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loops in JavaScript</title>
+    <style>
+        h1 {
+            font-size: 3.0em;
+            background-color: lightgray;
+            font-family: Arial, sans-serif; 
+            border: 2px solid black;    
+            text-align: center;
+            text-decoration: underline;
+            color: rgb(237, 5, 5);
+        }
+
+        p {
+            color: #0a4cd9;
+            background-color: #efe9e9;
+            padding: 10px;
+            border-radius: 5px;
+            font-family: 'Arial', Courier, monospace  ;
+            border: 1px solid #ccc;
+            font-size: 20px;
+        }
+    </style>
+
+    <script>
+        for (let i = 0; i < 5; i++) {
+            console.log("This is loop iteration number: " + i);
+        }
+    </script>
+
+    <script>
+        let j = 0;
+        while (j < 5) {
+            console.log("This is while loop iteration number: " + j);
+            j++;
+        }   
+        </script>
+
+        <script>
+        let k = 0;
+        do {
+            console.log("This is do-while loop iteration number: " + k);
+            k++;
+        } while (k < 5);
+    </script>   
+
+    <script>
+        const array = [1, 2, 3, 4, 5];
+        for (const element of array) {
+            console.log("This is for-of loop element: " + element);
+        }
+    </script>   
+
+    <script>
+        const object = {a: 1, b: 2, c: 3};
+        for (const key in object) {
+            console.log("This is for-in loop key: " + key + ", value: " + object[key]);
+        }       
+    </script>
+
+    <script>
+        const array2 = [1, 2, 3, 4, 5];
+        array2.forEach(element => {
+            console.log("This is forEach loop element: " + element);
+        });     
+    </script>   
+    
+    <script>
+        const array3 = [1, 2, 3, 4, 5];
+        array3.map(element => {
+            console.log("This is map loop element: " + element);
+        });    
+    </script>
+
+
+    <script>
+        const array4 = [1, 2, 3, 4, 5];
+        array4.filter(element => {
+            console.log("This is filter loop element: " + element);
+        });     
+    </script>   
+
+    <script>
+        const array5 = [1, 2, 3, 4, 5];
+        array5.reduce((accumulator, currentValue) => {
+            console.log("This is reduce loop element: " + currentValue);
+            return accumulator + currentValue;
+        }, 0);     
+    </script>   
+
+    <script>
+        const array6 = [1, 2, 3, 4, 5];
+        array6.some(element => {
+            console.log("This is some loop element: " + element);
+            return element > 3;
+        });    
+    </script>
+
+
+    <script>
+        for (let i = 0; i < 5; i++) {
+            if (i === 3) {
+                break ; // Skip the rest of the loop when i is 3
+            }
+            console.log("This is loop iteration number: " + i);
+        }
+
+        for (let j = 0; j < 5; j++) {
+            if (j === 3) {
+                continue ; // Skip the current iteration when j is 3
+            }
+            console.log("This is loop iteration number: " + j);
+        }
+
+        for (let k = 0; k < 5; k++) {
+            if (k === 3) {
+                return ; // Exit the function when k is 3
+            }
+            console.log("This is loop iteration number: " + k);
+        }
+
+        for (let m = 0; m < 5; m++) {
+            if (m === 3) {
+                throw new Error("An error occurred at iteration number: " + m); // Throw an error when m is 3
+            }
+            console.log("This is loop iteration number: " + m);
+        }   
+
+        for (let n = 0; n < 5; n++) {
+            if (n === 3) {
+                continue ; // Skip the current iteration when n is 3
+            }
+            console.log("This is loop iteration number: " + n);
+        }
+
+        let p = 0;
+        while (p < 5) {
+            if (p === 3) {
+                break ; // Skip the rest of the loop when p is 3
+            }
+            console.log("This is while loop iteration number: " + p);
+            p++;
+        }   
+
+        let q = 0;
+        while (q < 5) {
+            if (q === 3) {
+                continue ; // Skip the current iteration when q is 3
+            }
+            console.log("This is while loop iteration number: " + q);
+            q++;
+        }       
+        
+        
+    </script>
+</head>
+<body>
+    <h1>Loops in JavaScript</h1 >
+        <p>In this example, we demonstrate various types of loops in JavaScript, including for, while, do-while, for-of, for-in, forEach, map, filter, reduce, and some loops. We also show how to use control flow statements like break, continue, return, and throw within loops to manage the flow of execution based on certain conditions.</p>    
+        <p>Loops are essential for performing repetitive tasks and iterating over data structures in JavaScript. By using different types of loops and control flow statements, you can efficiently manage the execution of your code and handle various scenarios based on your requirements.</p>
+        <p>Feel free to modify the code and experiment with different loop types and control flow       
+        statements to see how they affect the behavior of your loops and the output in the console.</p>
+        <p>Check the console for output related to the different loops and control flow statements.</       
+        </p>    
+
+        <p>Note: The use of `return` in a loop will exit the entire function, so it should be used with caution. The `throw` statement will throw an error and stop the execution of the script, so it should also be used carefully.</p>   
+</body>
+</html>
