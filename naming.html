@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Variables Naming Conventions</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        h1 {
+            color: #f2033b;
+            background-color: #e0e0e0;
+            padding: 10px;
+            border-radius: 5px;
+            font-family: 'Courier New', Courier, monospace  ;
+            border: 1px solid #ccc;
+            font-size: 38px;
+        }
+        ul {
+            color: #b809f2;
+            background-color: #e0e0e0;
+            padding: 10px;
+            border-radius: 7px;
+            font-family: 'Courier New', Courier, monospace  ;
+            border: 1px solid #ccc;
+            font-size: 16px;
+        }
+        li {
+            margin-bottom: 10px;
+        }
+
+        p {
+            color: #0a4cd9;
+            background-color: #e0e0e0;
+            padding: 10px;
+            border-radius: 5px;
+            font-family: 'Courier New', Courier, monospace  ;
+            border: 1px solid #ccc;
+            font-size: 18px;
+        }
+    </style>
+    <script>
+        // Naming conventions for variables in JavaScript
+        let firstName = "Shiv";  // camelCase
+        let lastName = "Ji";
+        let age = 25;
+        let isStudent = true;
+
+        // Displaying the variables in the console
+        console.log("First Name:", firstName);
+        console.log("Last Name:", lastName);
+        console.log("Age:", age);
+        console.log("Is Student:", isStudent);  
+
+        // Invalid variable names (uncommenting these will cause errors)
+        // let 1stName = "Shiv"; // Cannot start with a number  
+
+        // let last-name = "Ji"; // Cannot contain hyphens  
+        
+    </script>
+    <script>
+        // Additional examples of valid variable names
+        let _privateVariable = "This is a private variable"; // Can start with an underscore
+        let $dollarVariable = "This is a dollar variable"; // Can start with a dollar sign
+
+        console.log("_privateVariable:", _privateVariable);
+        console.log("$dollarVariable:", $dollarVariable);
+    </script>   
+
+    <script>
+        // Example of reserved keywords (uncommenting these will cause errors)
+        // let var = "This is a reserved keyword"; // 'var' is a reserved keyword
+        // let function = "This is a reserved keyword"; // 'function' is a reserved keyword
+    </script>   
+
+    <script>
+        // Example of case sensitivity
+        let myVariable = "This is my variable";
+        let MyVariable  = "This is another variable";   
+        console.log("myVariable:", myVariable);
+        console.log("MyVariable:", MyVariable); // Different from myVariable due to case sensitivity
+    </script>
+</head>
+<body>
+   <h1>Variables Naming Conventions in JavaScript</h1>
+   <p>In JavaScript, variable names should follow certain conventions to ensure code readability and maintainability. Here are some key points to remember:</p>
+   <ul> 
+         <li>Use camelCase for variable names (e.g., firstName, lastName).</li>
+         <li>Variable names can include letters, digits, underscores (_), and dollar signs ($), but cannot start with a digit.</li>
+         <li>Avoid using reserved keywords as variable names (e.g., var, function).</li>
+         <li>Variable names are case-sensitive (e.g., myVariable and MyVariable are different).</li>        
+    </ul>   
+
+    <p>By following these conventions, you can write cleaner and more understandable code.</p>  
+    <p>Feel free to experiment with variable names in the console and see how JavaScript handles them!</p>  
+    <p>Happy coding!</p>    
+    
+</body>
+</html>
