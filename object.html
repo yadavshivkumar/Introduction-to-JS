@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Objects in JavaScript</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        h1 {
+            background-color: #f4f4f4;
+            padding: 10px;
+            border-radius: 5px; 
+            text-align: center; 
+            text-shadow: 1px 1px 2px #ccc;  
+            font-size: 2.5em;   
+            font-weight: bold;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            color: #ed0707;
+        }
+        p {
+            color: #0a4cd9;
+            background-color: #e0e0e0;
+            padding: 10px;
+            border-radius: 5px;
+            font-family: 'Courier New', Courier, monospace  ;
+            border: 1px solid #ccc;
+            font-size: 20px;
+        }
+        pre {
+            color: #12d5ea;
+            background-color: #f4f4f4;
+            padding: 10px;
+            border-radius: 5px;
+        }
+    </style>
+    <script>
+        console.log("Objects in JavaScript are collections of key-value pairs. They can contain properties and methods. Here's an example of an object:");      
+        let obj = {
+            name: "John",
+            age: 30,
+            salary : 50000, 
+            languages: ["JavaScript"], 
+            isAdmin : false,
+            }
+        console.log(obj);   
+ 
+    </script>
+
+
+    <script>
+        console.log("You can access object properties using dot notation or bracket notation. For example:");
+        console.log(obj.name); // Output: John
+        console.log(obj["age"]); // Output: 30
+    </script>       
+
+        <script>
+            console.log("You can also add new properties to an object or modify existing ones. For example:");
+            obj.city = "New York"; // Adding a new property
+            obj.age = 31; // Modifying an existing property
+            console.log(obj);       
+        </script>
+
+        <script>
+            console.log("Objects can also have methods, which are functions that belong to the object. For example:");
+            obj.greet = function() {
+                console.log("Hello, my name is " + this.name);
+            }
+            obj.greet(); // Output: Hello, my name is John
+        </script>       
+
+        <script>
+            console.log("You can also use the Object constructor to create an object. For example:");
+            let person = new Object();
+            person.name = "Alice";
+            person.age = 25;
+            console.log(person); // Output: { name: 'Alice', age: 25 }      
+        </script>
+
+        <script>
+            console.log("Objects can also be created using object literals, which is a more concise syntax. For example:");
+            let car = {
+                make: "Toyota",
+                model: "Camry",
+                year: 2020
+            };
+            console.log(car); // Output: { make: 'Toyota', model: 'Camry', year: 2020 }
+        </script>   
+
+    <script>
+        console.log("Objects can also be nested, meaning that an object can contain another object as a property. For example:");
+        let company = {
+            name: "Tech Co.",
+            employees: {
+                name: "Bob",
+                age: 28
+            }
+        };
+        console.log(company); // Output: { name: 'Tech Co.', employees: { name: 'Bob', age: 28 } }
+    </script>       
+
+
+    <script>
+        console.log("You can also use the Object.keys() method to get an array of an object's property names. For example:");
+        console.log(Object.keys(obj)); // Output: [ 'name', 'age', 'salary', 'languages', 'isAdmin', 'city', 'greet' ]
+    </script>   
+
+    <script>
+        console.log("You can also use the Object.values() method to get an array of an object's property values. For example:");
+        console.log(Object.values(obj)); // Output: [ 'John', 31, 50000, [ 'JavaScript' ], false, 'New York', [Function (anonymous)] ]
+    </script>   
+
+
+    <script>
+        console.log("You can also use the Object.entries() method to get an array of an object's key-value pairs. For example:");
+        console.log(Object.entries(obj)); // Output: [ [ 'name', 'John' ], [ 'age', 31 ], [ 'salary', 50000 ], [ 'languages', [Array] ], [ 'isAdmin', false ], [ 'city', 'New York' ], [ 'greet', [Function (anonymous)] ] ]            
+    </script>
+
+
+    <script>
+        console.log("Objects can also be used to create classes and instances in JavaScript. For example:");
+        function Person(name, age) {
+            this.name = name;
+            this.age = age;
+        }
+        let person1 = new Person("Alice", 25);
+        let person2 = new Person("Bob", 30);
+        console.log(person1); // Output: Person { name: 'Alice', age: 25 }
+        console.log(person2); // Output: Person { name: 'Bob', age: 30 }
+    </script>       
+
+    <script>
+        console.log("In summary, objects in JavaScript are versatile data structures that can store various types of data and functions. They are fundamental to the language and are used extensively in programming.");   
+    </script>
+
+    <script>
+        console.log("That's all for now! If you have any questions about objects in JavaScript, feel free to ask.");    
+    </script>   
+
+    <script>
+        console.log("Thank you for learning about objects in JavaScript! Happy coding!");   
+    </script>
+</head>
+<body>
+    <h1>Objects in JavaScript</h1>
+    <p>Open the console to see the output of the JavaScript code examples.</p       
+        <p>Objects in JavaScript are collections of key-value pairs. They can contain properties and methods. Here's an example of an object:</p>
+        <pre>
+        let obj = { 
+            name: "John",
+            age: 30,
+            salary : 50000, 
+            languages: ["JavaScript"], 
+            isAdmin : false,
+        }
+        </pre>
+        <p>You can access object properties using dot notation or bracket notation. For example:</p>
+        <pre>
+        console.log(obj.name); // Output: John
+        console.log(obj["age"]); // Output: 30
+        </pre>  
+
+        <p>You can also add new properties to an object or modify existing ones. For example:</p>
+        <pre>
+        obj.city = "New York"; // Adding a new property 
+        obj.age = 31; // Modifying an existing property
+        console.log(obj);
+        </pre>  
+</body>
+</html>
