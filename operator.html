@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Operators in JavaScript</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        h1 {
+            background-color: #f4f4f4;
+            padding: 10px;
+            border-radius: 5px; 
+            text-align: center; 
+            text-shadow: 1px 1px 2px #ccc;  
+            font-size: 2.5em;   
+            font-weight: bold;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            color: #ed0707;
+        }
+        p {
+            color: #1502ec;
+            background-color: #e0e0e0;
+            padding: 10px;
+            border-radius: 5px;
+            font-family: 'Courier New', Courier, monospace  ;
+            border: 1px solid #ccc;
+            font-size: 20px;
+        }
+        pre {
+            color: #12d5ea;
+            background-color: #f4f4f4;
+            padding: 10px;
+            border-radius: 5px;
+        }
+    </style>
+    <script>
+
+       // Arithmetic Operators
+       let a = 10;
+         let b = 5;
+         console.log("Addition: " + (a + b)); // 15
+         console.log("Subtraction: " + (a - b)); // 5
+         console.log("Multiplication: " + (a * b)); // 50
+         console.log("Division: " + (a / b)); // 2
+         console.log("Modulus: " + (a % b)); // 0
+
+
+            // Assignment Operators
+            let c = 20;
+            c += 5; // c = c + 5
+            console.log("After += : " + c); // 25
+            c -= 3; // c = c - 3
+            console.log("After -= : " + c); // 22
+            c *= 2; // c = c * 2
+            console.log("After *= : " + c); // 44
+            c /= 4; // c = c / 4
+            console.log("After /= : " + c); // 11
+            c %= 3; // c = c % 3
+            console.log("After %= : " + c); // 2
+        
+            // Comparison Operators
+            let x = 10;
+            let y = "10";
+            console.log("Equal to (==): " + (x == y)); // true
+            console.log("Strict equal to (===): " + (x === y)); // false
+            console.log("Not equal to (!=): " + (x != y)); // false
+            console.log("Strict not equal to (!==): " + (x !== y)); // true
+            console.log("Greater than (>): " + (x > 5)); // true
+            console.log("Less than (<): " + (x < 15)); // true
+            console.log("Greater than or equal to (>=): " + (x >= 10    )); // true
+            console.log("Less than or equal to (<=): " + (x <= 10)); // true    
+            
+             // Logical Operators
+             let p = true;
+             let q = false;
+             console.log("Logical AND (&&): " + (p && q)); // false
+             console.log("Logical OR (||): " + (p || q)); // true
+             console.log("Logical NOT (!): " + (!p)); // false
+
+              // Ternary Operator
+              let age = 18;
+              let canVote = (age >= 18) ? "Yes" : "No";
+              console.log("Can vote: " + canVote); // Yes
+
+               // Typeof Operator
+               console.log("Type of a: " + typeof a); // number
+               console.log("Type of b: " + typeof b); // number
+               console.log("Type of p: " + typeof p); // boolean
+               console.log("Type of q: " + typeof q); // boolean
+               console.log("Type of canVote: " + typeof canVote); // string 
+
+               // Bitwise Operators
+               let m = 5; // 0101 in binary
+               let n = 3; // 0011 in binary
+               console.log("Bitwise AND (&): " + (m & n)); // 1
+               console.log("Bitwise OR (|): " + (m | n)); // 7
+               console.log("Bitwise XOR (^): " + (m ^ n)); // 6
+               console.log("Bitwise NOT (~): " + (~m)); // -6
+               console.log("Left Shift (<<): " + (m << 1)); // 10
+               console.log("Right Shift (>>): " + (m >> 1)); // 2
+               console.log("Unsigned Right Shift (>>>): " + (m >>> 1)); // 2    
+
+               // Spread Operator
+               let arr1 = [1, 2, 3];
+               let arr2 = [...arr1, 4, 5];              
+                console.log("Spread Operator: " + arr2); // [1, 2, 3, 4, 5]
+    
+                 // Nullish Coalescing Operator
+                 let value = null;
+                 let defaultValue = "Default";
+                 let result = value ?? defaultValue;
+                 console.log("Nullish Coalescing Operator: " + result); // Default
+                 
+                  // Optional Chaining Operator
+                  let obj = { name: "Alice", address: { city: "New York" } };
+                  console.log("Optional Chaining Operator: " + obj.address?.city); // New York
+                  console.log("Optional Chaining Operator (non-existent property): " + obj.contact?.phone); // undefined
+
+                  console.log("Type of obj: " + typeof obj); // object
+
+                  // Instanceof Operator
+                  console.log("Instanceof Operator: " + (obj instanceof Object)); // true   
+                  console.log("Instanceof Operator (array): " + (arr1 instanceof Array)); // true   
+
+                  // Delete Operator
+                  let person = { name: "Bob", age: 30 };
+                  console.log("Before delete: " + person.name); // Bob
+                  delete person.name;
+                  console.log("After delete: " + person.name); // undefined 
+
+                  // Void Operator
+                  function myFunction() {
+                    console.log("This function returns undefined.");
+                  }
+                  console.log("Void Operator: " + void myFunction()); // undefined  
+
+                  // Comma Operator
+                  let x1 = 1, y1 = 2;
+                  let z = (x1++, y1++);
+                  console.log("Comma Operator: " + z); // 2 
+
+                  // Type Conversion Operators
+                  let num = "123";      
+                    console.log("Number(): " + Number(num)); // 123
+                    console.log("String(): " + String(num)); // "123"
+                    console.log("Boolean(): " + Boolean(num)); // true
+                    
+
+    
+    </script>
+</head>
+<body>
+  <h1>Operators in JavaScript</h1>  
+  <p>Open the console to see the output of the JavaScript code examples.</p>
+  <p>Operators in JavaScript are used to perform operations on variables and values. They can be categorized into different types, such as arithmetic, assignment, comparison, logical, and more. Below are examples of various operators in JavaScript:</p>
+  <p>In the console, you will see the output of each operator demonstration. Feel free to experiment with the code and try out different operators to see how they work!</p>
+  <p>Let's get started with learning about operators in JavaScript!</p>
+  <p>Remember, understanding operators is crucial for writing effective JavaScript code, as they are fundamental to performing calculations, making comparisons, and controlling the flow of your program.</p>
+  <p>Happy coding!</p>
+</body>
+</html>
+    <script>
+        console.log("In JavaScript, operators are used to perform operations on variables and values. There are various types of operators, including arithmetic, assignment, comparison, logical, and more. Let's go through some of the most commonly used operators in JavaScript.");
+    </script>
+
+    <script>
+        console.log("Arithmetic Operators:");
+        console.log("Addition (+), Subtraction (-), Multiplication (*), Division (/), Modulus (%).");
+    </script>
+
+    <script>
+        console.log("Assignment Operators:");
+        console.log("Assignment (=), Addition assignment (+=), Subtraction assignment (-=), Multiplication assignment (*=), Division assignment (/=), Modulus assignment (%=).");
+    </script>
+
+    <script>
+        console.log("Comparison Operators:");
+        console.log("Equal to (==), Strict equal to (===), Not equal to (!=), Strict not equal to (!==), Greater than (>), Less than (<), Greater than or equal to (>=), Less than or equal to (<=).");
+    </script>
+
+    <script>
+        console.log("Logical Operators:");
+        console.log("Logical AND (&&), Logical OR (||), Logical NOT (!).");
+    </script>
+
+    <script>
+        console.log("Ternary Operator:");
+        console.log("Condition ? expressionIfTrue : expressionIfFalse.");
+    </script>
+
+    <script>
+        console.log("Typeof Operator:");
+        console.log("Used to determine the type of a variable or expression. For example:");
+        let numValue = 42;
+        let strValue = "Hello";
+        let boolValue = true;
+        let objValue = { name: "Alice" };
+        let arrValue = [1, 2, 3];
+        let funcValue = function() {};
+        console.log(typeof numValue); // Output: number
+        console.log(typeof strValue); // Output: string
+        console.log(typeof boolValue); // Output: boolean
+        console.log(typeof objValue); // Output: object
+        console.log(typeof arrValue); // Output: object
+        console.log(typeof funcValue); // Output: function
+    </script>
+    
+</body>
+</html>
