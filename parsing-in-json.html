@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Parsing JSON in JavaScript   </title>
+
+    <script>
+        // Example of parsing JSON in JavaScript
+        const jsonString = '{"name": "John", "age": 30, "city": "New York"}';
+        const jsonObject = JSON.parse(jsonString);
+        console.log(jsonObject.name); // Output: John
+        console.log(jsonObject.age);  // Output: 30
+        console.log(jsonObject.city); // Output: New York
+    </script>   
+    <style>
+        body {
+            color: rgb(241, 4, 4);
+            font-family: Arial, sans-serif;
+            margin: 20px;
+                background-color: #9a9393;
+                font-size: 16px;         
+        }
+        pre {
+            background-color: #f4f4f4;
+            padding: 10px;
+            border-radius: 5px;
+            overflow-x: auto;
+            font-family: 'Courier New', Courier, monospace;
+            font-size: 14px;
+        }
+        code {
+            font-family: 'Courier New', Courier, monospace;
+            font-size: 14px;
+            background-color: #eaeaea;
+        }
+
+        h1 {
+            font-family: 'Arial Black', Arial, sans-serif;
+            color: #0d06e4;
+            font-size: 34px;
+        }
+
+        h2 {
+            color: #555;
+            font-size: 30px;
+            font-weight: normal;
+            border-bottom: 2px solid #ddd;
+            padding-bottom: 5px;
+             margin-top: 30px;
+        }   
+
+        p {
+            line-height: 1.6;
+                margin-bottom: 20px;    
+                background-attachment: fixed;
+                background-color: #f4f4f4;
+        }   
+    </style>
+
+</head>
+<body>
+    <h1>Parsing JSON in JavaScript</h1>
+    <p>To parse a JSON string in JavaScript, you can use the built-in <code>JSON.parse()</code> method. This method takes a JSON string as input and returns the corresponding JavaScript object.</p>
+    <h2>Example</h2>
+    <pre><code>const jsonString = '{"name": "John", "age": 30, "city": "New York"}';
+const jsonObject = JSON.parse(jsonString);
+console.log(jsonObject.name); // Output: John
+console.log(jsonObject.age);  // Output: 30
+console.log(jsonObject.city); // Output: New York
+</code></pre>
+    <p>In this example, we have a JSON string that represents an object with three properties: <code>name</code>, <code>age</code>, and <code>city</code>. We use <code>JSON.parse()</code> to convert the JSON string into a JavaScript object, which we can then access using dot notation.</p>
+    <h2>Handling Errors</h2>
+    <p>If the JSON string is not properly formatted, <code>JSON.parse()</code> will throw a <code>SyntaxError</code>. To handle this, you can use a <code>try...catch</code> block:</p>
+    <pre><code>const invalidJsonString = '{"name": "John", "age": 30, "city": "New York"'; // Missing closing brace
+try {    const jsonObject = JSON.parse(invalidJsonString);
+} catch (error) {    console.error('Error parsing JSON:', error);
+}</code></pre>
+    <p>In this example, the JSON string is missing a closing        brace, which will cause <code>JSON.parse()</code> to throw a <code>SyntaxError</code>. The error is caught in the <code>catch</code> block, and an error message is logged to the console.</p>              
+  <p></p>
+</body>
+</html>
+
