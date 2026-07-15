@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Query Selector in JavaScript</title>
+    <style>
+        /* Basic styling for demonstration */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        h1 {
+            background-color: lightblue;
+            font-size: 44px;
+            text-align: center;
+            text-decoration: underline;
+            border: 2px solid black;
+             color: green;
+         }
+
+         h2 {
+             background-color: lightcoral;
+             font-size: 28px;
+             text-align: center;
+             text-decoration: overline;
+             border: 2px dotted red;
+             color: white;      
+         }
+        p {
+            color: #0a4cd9;
+            background-color: #e0e0e0;
+            padding: 10px;
+            border-radius: 5px;
+            font-family: 'Courier New', Courier, monospace  ;
+            border: 1px solid #ccc;
+            font-size: 18px;
+        }
+    </style>
+                
+
+    <script>
+        // Example of using querySelector to select an element by its ID
+        document.addEventListener("DOMContentLoaded", function() {
+            const elementById = document.querySelector("#myElement");
+            console.log(elementById);
+
+            // Example of using querySelector to select an element by its class
+            const elementByClass = document.querySelector(".myClass");
+            console.log(elementByClass);
+
+            // Example of using querySelector to select an element by its tag name
+            const elementByTag = document.querySelector("p");
+            console.log(elementByTag);
+        });
+    </script>
+
+    <script>
+        // Example of using querySelectorAll to select multiple elements
+        document.addEventListener("DOMContentLoaded", function() {
+            const elementsByClass = document.querySelectorAll(".myClass");
+            console.log(elementsByClass);
+        });
+    </script>
+
+
+    <script>
+        // Example of using querySelector with a more complex selector
+        document.addEventListener("DOMContentLoaded", function() {
+            const complexSelector = document.querySelector("div > .myClass");
+            console.log(complexSelector);
+        });     
+    </script>
+
+    <script>
+        // Example of using querySelector to select an element with a specific attribute
+        document.addEventListener("DOMContentLoaded", function() {
+            const elementWithAttribute = document.querySelector("[data-custom='value']");
+            console.log(elementWithAttribute);
+        });
+
+        // Example of using querySelector to select an element with a specific pseudo-class
+        document.addEventListener("DOMContentLoaded", function() {
+            const firstChild = document.querySelector("ul li:first-child");
+            console.log(firstChild);
+        });
+
+        // Example of using querySelector to select an element with a specific pseudo-element       
+        document.addEventListener("DOMContentLoaded", function() {
+            const firstParagraph = document.querySelector("p::first-letter");
+            console.log(firstParagraph);
+        });
+
+        // Example of using querySelector to select an element with a specific combinator
+        document.addEventListener("DOMContentLoaded", function() {
+            const adjacentSibling = document.querySelector("h1 + p");
+            console.log(adjacentSibling);
+        });
+
+        // Example of using querySelector to select an element with a specific group selector
+        document.addEventListener("DOMContentLoaded", function() {
+            const groupSelector = document.querySelector("h1, h2, h3");
+            console.log(groupSelector); 
+        });
+    </script>   
+</head>
+<body>
+    <h1 id="myElement">Hello, World!</h1>
+    <p class="myClass">This is a paragraph with the class "myClass".</p>
+    <div>
+        <p class="myClass">This is another paragraph with the class "myClass" inside a div.</p>
+    </div>
+    <ul>
+        <li>First item</li>
+        <li>Second item</li>
+        <li>Third item</li>
+    </ul>
+    <p data-custom="value">This paragraph has a custom data attribute.</p>  
+    <p>This is a regular paragraph without any special attributes or classes.</p>
+    <p>This is another regular paragraph without any special attributes or classes.</p>
+    <p>This is yet another regular paragraph without any special attributes or classes.</p>
+
+</b>
+
+</body>
+</html>
