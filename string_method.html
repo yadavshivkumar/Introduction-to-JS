@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>String Methods in JavaScript</title>
+
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        h1 {
+            text-align: center; 
+            text-decoration: underline; 
+            color: #d90a1f;
+            background-color: #e0e0e0;
+            padding: 10px;
+            border-radius: 5px;
+            font-family: 'Courier New', Courier, monospace  ;
+            border: 1px solid #ccc;
+            font-size: 40px;
+        }
+        p {
+            color: #0a4cd9;
+            background-color: #e0e0e0;
+            padding: 10px;
+            border-radius: 5px;
+            margin-bottom: 20px;
+            font-family: 'Courier New', Courier, monospace  ;
+            border: 1px solid #ccc;
+            font-size: 18px;
+        }
+        a {
+            color: #007BFF;
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+    </style>
+    <script>
+        const str1 = "Hello, World!";
+
+        // Using length property
+        console.log("Length of the string:", str1.length);
+
+        // Using toUpperCase() method
+        console.log("Uppercase:", str1.toUpperCase());
+
+        // Using toLowerCase() method
+        console.log("Lowercase:", str1.toLowerCase());
+
+        // Using indexOf() method
+        console.log("Index of 'World':", str1.indexOf("World"));
+
+        // Using slice() method
+        console.log("Slice from index 0 to 5:", str1        .slice(0, 5));
+
+        // Using replace() method
+        console.log("Replace 'World' with 'JavaScript':", str1      .replace("World", "JavaScript"));
+
+        // Using split() method
+        console.log("Split by comma:", str1 .split(","));
+
+        // Using trim() method
+        const strWithSpaces = "   Hello, World!   ";
+        console.log("Trimmed string:", strWithSpaces.trim());   
+    </script>
+
+    <script>
+        const str2= "JavaScript is awesome!";
+
+        // Using includes() method
+        console.log("Does the string include 'awesome'? ", str2.includes("awesome"));
+
+        // Using startsWith() method
+        console.log("Does the string start with 'Java'? ", str2.startsWith("Java"));
+
+        // Using endsWith() method
+        console.log("Does the string end with 'awesome!'? ", str2.endsWith("awesome!"));
+
+        // Using repeat() method
+        console.log("Repeat the string 3 times: ", str2.repeat(3));
+    </script>       
+
+    <script>
+        const str3 = "Hello, World!";
+
+        // Using charAt() method
+        console.log("Character at index 7:", str3.charAt(7));
+
+        // Using charCodeAt() method
+        console.log("Character code at index 7:", str3.charCodeAt(7));
+
+        // Using fromCharCode() method
+        console.log("Character from char code 87:", String.fromCharCode(87));       
+    </script>
+
+    <script>
+        const str4 = "Hello, World!";
+
+        // Using substring() method
+        console.log("Substring from index 0 to 5:", str4.substring(0, 5));
+
+        // Using substr() method (deprecated)
+        console.log("Substr from index 7 with length 5:", str4.substr(7, 5));
+    </script>   
+
+    <script>
+        const str5 = "Hello, World!";
+
+        // Using match() method
+        console.log("Match 'o':", str5.match(/o/g));
+
+        // Using search() method
+        console.log("Search for 'World':", str5.search("World"));
+    </script>   
+
+    <script>
+        const str6 = "Hello, World!";
+
+        // Using padStart() method
+        console.log("Pad start to length 20:", str6.padStart(20));
+
+        // Using padEnd() method
+        console.log("Pad end to length 20:", str6.padEnd(20));
+    </script>       
+
+    <script>
+        const str7 = "Hello, World!";
+
+        // Using repeat() method
+        console.log("Repeat the string 3 times: ", str7.repeat(3));      
+    </script>
+
+    <script>
+        const str8 = "Hello, World!";
+
+        // Using toString() method
+        console.log("String representation:", str8.toString());
+    
+
+    // Using valueOf() method
+    const str9 = "Hello, World!";
+    console.log("Primitive value of the string:", str9.valueOf());  
+
+    // Using localeCompare() method
+    const str10 = "Hello, World!";      
+    const str11 = "hello, world!";
+    console.log("Locale compare:", str10.localeCompare(str11));
+
+    // Using normalize() method
+    const str12 = "Café";
+    console.log("Normalized string:", str12.normalize());   
+
+    // Using toLocaleUpperCase() method 
+    const str13 = "Hello, World!";
+    console.log("Locale uppercase:", str13.toLocaleUpperCase());
+        const str14 = "Hello, World!";
+
+        // Using toLocaleLowerCase() method
+        console.log("Locale lowercase:", str14.toLocaleLowerCase());   
+
+        // Using toLocaleString() method
+        const str15 = "Hello, World!";
+        console.log("Locale string representation:", str15.toLocaleString());
+
+        // Using toLocaleDateString() method
+        const date = new Date();
+        console.log("Locale date string:", date.toLocaleDateString());
+
+        // Using toLocaleTimeString() method
+        console.log("Locale time string:", date.toLocaleTimeString());
+
+        // Using toLocaleString() method for date and time
+        console.log("Locale date and time string:", date.toLocaleString());
+
+        // Using toLocaleUpperCase() method for different locale
+        const str16 = "Hello, World!";
+        console.log("Locale uppercase (Turkish):", str16.toLocaleUpperCase('tr'));
+
+        // Using toLocaleLowerCase() method for different locale
+        const str17 = "Hello, World!";
+        console.log("Locale lowercase (Turkish):", str17.toLocaleLowerCase('tr'));
+
+        // Using toLocaleString() method for different locale
+        const str18 = "Hello, World!";
+        console.log("Locale string representation (French):", str18.toLocaleString('fr'));  
+
+        // Using toLocaleDateString() method for different locale
+        console.log("Locale date string (French):", date.toLocaleDateString('fr')); 
+    </script>
+
+</head>
+<body>
+    <h1>String Methods in JavaScript</h1>
+    <p>Open the console to see the output of various string methods.</p>    
+    <p>Check the JavaScript code in the head section for examples of different string methods.</p>  
+    <p>Feel free to modify the code and experiment with other string methods!</p>   
+    <p>For more information on string methods, refer to the <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String" target="_blank">MDN Web Docs</a>.</p> 
+    <p>Happy coding!</p>
+</body>
+</html>
