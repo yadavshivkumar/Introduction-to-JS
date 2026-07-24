@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Working with Attributes and Classes in JavaScript</title>
+
+    <style>
+        .new-class {
+            font-weight: bold;
+        }
+        .old-class {
+            text-decoration: line-through;
+        }
+        .toggle-class {
+            color: blue;
+        }
+        h1 {
+            size: 8em;
+            background-color: lightgray;
+            font: 1em sans-serif;
+            font-size: 3.0em;
+            font-family: Arial, sans-serif; 
+            border: 2px solid black;    
+            text-align: center;
+            text-decoration: underline;
+            color: rgb(237, 5, 5);
+        }
+
+        p {
+            color: #0a4cd9;
+            background-color: #efe9e9;
+            padding: 10px;
+            border-radius: 5px;
+            font-family: 'Courier New', Courier, monospace  ;
+            border: 1px solid #ccc;
+            font-size: 18px;
+        }
+    </style>
+    <script>
+        // Example of working with attributes
+        document.addEventListener('DOMContentLoaded', () => {
+            const element = document.querySelector('#myElement');
+            // Get an attribute
+            const attrValue = element.getAttribute('data-info');
+            console.log('Attribute value:', attrValue);
+
+            // Set an attribute
+            element.setAttribute('data-info', 'New Value');
+            console.log('Updated attribute value:', element.getAttribute('data-info'));
+
+            // Remove an attribute
+            element.removeAttribute('data-info');
+            console.log('Attribute after removal:', element.getAttribute('data-info'));
+        });
+
+        // Example of working with classes
+        document.addEventListener('DOMContentLoaded', () => {
+            const element = document.querySelector('#myElement');
+            // Add a class
+            element.classList.add('new-class');
+            // Remove a class
+            element.classList.remove('old-class');
+            // Toggle a class
+            element.classList.toggle('toggle-class');
+        });
+
+        // Example of working with styles
+        document.addEventListener('DOMContentLoaded', () => {
+            const element = document.querySelector('#myElement');
+            // Set a style
+            element.style.color = 'red';
+            // Get a style
+            const color = element.style.color;
+            console.log('Element color:', color);
+        });
+
+        // Example of working with data attributes
+        document.addEventListener('DOMContentLoaded', () => {
+            const element = document.querySelector('#myElement');
+            // Get a data attribute            const dataInfo = element.dataset.info;
+            console.log('Data attribute value:', dataInfo);     
+
+            // Set a data attribute
+            element.dataset.info = 'Updated Data Value';
+            console.log('Updated data attribute value:', element.dataset.info);
+        });
+
+
+    </script>
+</head>
+<body>
+    <h1>Working with Attributes and Classes in JavaScript</h1>
+    <div style="font-size: 1.5em " id="myElement" data-info="Original Value">My Element</div> 
+    <p>In this example, we demonstrate how to work with attributes, classes, styles, and data attributes in JavaScript. We use the `getAttribute`, `setAttribute`, and `removeAttribute` methods to manipulate attributes, and the `classList` property to manage classes. We also show how to set and get inline styles and how to work with data attributes using the `dataset` property.</p> 
+    <p>Attributes provide additional information about an element, while classes are used to apply CSS styles and manage the appearance of elements. Styles can be set directly on elements using the `style` property, and data attributes allow you to store custom data on elements that can be accessed via JavaScript.</p> 
+    <p>By using these methods and properties, you can dynamically manipulate the content and appearance of your web page based on user interactions or other events.</p>
+    <p>Feel free to modify the code and experiment with different attributes, classes, styles, and data attributes to see how they affect the behavior and appearance of the element.</p>   
+    <p>Check the console for output related to attributes, classes, styles, and data attributes.</p>    
+    <p> attributes are values assigned to HTML elements that provide additional information about the element.</p>
+
+    
+</body>
+</html>
