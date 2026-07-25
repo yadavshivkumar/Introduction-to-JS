@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Introduction to JavaScript</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        h1 {
+            background-color: #ef1010;
+            padding: 10px;  
+            color: #efefef;
+            font-size: 44px;
+            font-weight: bold;
+            text-align: center;
+            text-transform: uppercase;
+        }   
+        h2, h3 {
+            color: #333;
+            font-family: 'Georgia', serif; 
+            font-style: italic;
+            text-align: justify;
+            border-left: 4px solid #ea0606;
+            padding-left: 10px;     
+        }
+        h2 { font-size: 28px; }
+        h3 { font-size: 24px; }
+        
+        p {
+            counter-reset: paragraph    ;
+                color: #0586f6;
+                font-family: 'Georgia', serif; 
+                font-style: italic;
+                text-align: justify;
+                border-left: 4px solid #ea0606;
+                padding-left: 10px;     
+            font-size: 22px;
+            line-height: 2;
+        }
+    </style>
+    
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <h1>Introduction to JavaScript</h1>
+    <p>JavaScript is a versatile programming language that allows you to create dynamic and interactive web content. It is widely used for web development, enabling developers to build responsive user interfaces, handle events, and manipulate the Document Object Model (DOM).</p>
+
+    <h2>Getting Started with JavaScript</h2>
+    <p>To start using JavaScript, you can include it in your HTML file using the <code>&lt;script&gt;</code> tag. You can either write your JavaScript code directly within the tag or link to an external JavaScript file.</p>
+
+    <h3>Example of Inline JavaScript</h3>
+    <pre><code>&lt;script&gt;
+    console.log("Hello, World!");
+&lt;/script&gt;</code></pre>
+    <br><br> 
+
+   <p>This page is to demonstrate JS.</p> 
+   
+   <button onclick="alert('Hey!, I am Shiv')">Click Me</button>
+
+   <p id="demo-output"></p>
+
+   <script> 
+        // alert('Hey !, I am Shiv'); // (Commented out: alerts on page load can be annoying for users)
+        
+        console.log("This is a message from the console.");
+        
+        // Replaced document.write() with DOM manipulation
+        document.getElementById("demo-output").textContent = "This is written using JavaScript.";
+   </script>    
+
+   <p>JavaScript can be used for a wide range of applications, including web development, server-side programming, game development, and more. It is an essential language for anyone interested in becoming a web developer or working with web technologies.</p>  
+   
+   <p>In the following sections, we will explore various concepts and features of JavaScript, including variables, data types, functions, events, and more. By the end of this introduction, you will have a solid foundation to start building your own JavaScript applications.</p>   
+   
+   <p>Let's dive into the world of JavaScript and discover its capabilities!</p>    
+   
+   <p>In the next sections, we will cover the basics of JavaScript, including variables, data types, functions, and events. We will also explore how to manipulate the DOM and create interactive web pages using JavaScript.</p>
+   
+   <p>Whether you are a beginner or an experienced developer, JavaScript offers a wide range of features and capabilities that can help you create powerful and dynamic web applications. So, let's get started!</p>
+
+   <script>
+    // This is a single-line comment
+
+    /*
+     This is a multi-line comment
+     It can span multiple lines
+    */
+
+    // Variables in JavaScript
+    let userName = "Shiv"; // Changed 'name' to 'userName' as 'name' is a deprecated global window property
+    const age = 25;
+    var city = "New York";
+
+    console.log("Name: " + userName);
+    console.log("Age: " + age);
+    console.log("City: " + city);
+   </script>    
+
+   <script>
+    // Data Types in JavaScript
+    let str = "Hello, World!"; // String
+    let num = 42; // Number
+    let bool = true; // Boolean
+    let arr = [1, 2, 3, 4, 5]; // Array
+    let obj = { name: "Shiv", age: 25 }; // Object
+    let undef; // Undefined
+    let nul = null; // Null
+
+    console.log("String: " + str);
+    console.log("Number: " + num);
+    console.log("Boolean: " + bool);
+    console.log("Array: " + arr);
+    console.log("Object: " + JSON.stringify(obj));
+    console.log("Undefined: " + undef);
+    console.log("Null: " + nul);
+   </script>    
+</body>
+</html>
